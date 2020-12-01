@@ -29,7 +29,7 @@ def get_lines(index):
     ]
 
 
-python_files = ["run1.py", "run2.py"]
+python_files = ["part1.py", "part2.py"]
 for i in range(len(python_files)):
     file_path = os.path.join(path, python_files[i])
     f = open(file_path, 'x')
