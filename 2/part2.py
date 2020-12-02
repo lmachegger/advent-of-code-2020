@@ -6,13 +6,11 @@ data = f.read().split('\n')
 
 def check_line(pos_1, pos_2, character, password):
     count = 0
-    # print(pos_1, pos_2, character, password)
     if(password[pos_1 - 1] == character):
         count = count + 1
     if(password[pos_2 - 1] == character):
         count = count + 1
 
-    # print(count)
     return count == 1
 
 
