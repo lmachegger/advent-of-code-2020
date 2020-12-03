@@ -5,7 +5,6 @@ f = open('input1', 'r')
 data = [f.read().split('\n')]
 data = data[0]
 
-
 x_slopes = [1, 3, 5, 7, 1]
 y_slopes = [1, 1, 1, 1, 2]
 width = len(data[0])
