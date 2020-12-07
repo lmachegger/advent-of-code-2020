@@ -1,39 +1,20 @@
 # Day 4
 # Part 1
 
-# read in all lines
-f = open('input1', 'r')
-all_lines = [f.read().split('\n')][0]
+with open('input1', 'r') as f:
+    all_lines = f.read().split('\n\n')
 
-# create array of data
-data = []
-chunk = ''
+passports = []
 for line in all_lines:
-    if not ':' in line:
-        data.append(chunk)
-        chunk = ''
-    else:
-        chunk = chunk + ' ' + line
+    passports.append(line.replace('\n', ' ').split(' '))
 
-# add last item
-data.append(chunk)
-
-# list of items that need to be in pass
 check_list = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
 
+counter = 0
+for pp in passports:
+    d = dict(i.split(':') for i in pp)
+    if all(vals in d for vals in check_list):
+        counter += 1
 
-# check function
-def check_pass(fields):
-    for item in check_list:
-        if not item in fields:
-            return False
-    return True
-
-
-# check every item in data
-valid_count = 0
-for item in data:
-    if check_pass(item):
-        valid_count += 1
-
-print('valid passes: ',  valid_count)
+print(counter)
+print(len(passports))
