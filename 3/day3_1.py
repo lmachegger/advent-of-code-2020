@@ -1,8 +1,8 @@
 # Day 3
 # Part 1
-f = open('input1', 'r')
+with open('input3', 'r') as f:
+    data = [f.read().split('\n')]
 
-data = [f.read().split('\n')]
 data = data[0]
 
 x_pos = 0

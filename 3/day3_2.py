@@ -1,8 +1,8 @@
 # Day 3
 # Part 2
-f = open('input1', 'r')
+with open('input3', 'r') as f:
+    data = [f.read().split('\n')]
 
-data = [f.read().split('\n')]
 data = data[0]
 
 x_slopes = [1, 3, 5, 7, 1]

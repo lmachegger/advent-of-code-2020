@@ -1,7 +1,7 @@
 # Day 2
 # Part 1
-f = open('input1', 'r')
-data = f.read().split('\n')
+with open('input2', 'r') as f:
+    data = f.read().split('\n')
 
 
 def check_line(count_min, count_max, character, password):
