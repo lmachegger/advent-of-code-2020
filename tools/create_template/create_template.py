@@ -24,7 +24,8 @@ def get_lines(index):
     return [
         "#Day " + args.foldername + "\n",
         "#Part " + index + "\n",
-        "with open('input" + args.foldername + "', 'r') as f:"
+        "with open('" + args.foldername + "/input" +
+        args.foldername + "', 'r') as f:"
     ]
 
 
