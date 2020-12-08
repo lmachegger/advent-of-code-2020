@@ -1,6 +1,6 @@
 # Day 6
 # Part 1
-with open('input6', 'r') as f:
+with open('6/input6', 'r') as f:
     groups = f.read().split('\n\n')
 
 results = []

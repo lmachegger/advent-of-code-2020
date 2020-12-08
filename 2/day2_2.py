@@ -1,6 +1,6 @@
 # Day 2
 # Part 2
-with open('input2', 'r') as f:
+with open('2/input2', 'r') as f:
     data = f.read().split('\n')
 
 

@@ -2,7 +2,7 @@
 # Part 2
 import re
 
-with open('input4', 'r') as f:
+with open('4/input4', 'r') as f:
     all_lines = f.read().split('\n\n')
 
 passports = []

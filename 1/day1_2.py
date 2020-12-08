@@ -1,6 +1,6 @@
 # Day 1
 # Part 1
-with open("input1", "r") as f:
+with open("1/input1", "r") as f:
     data = [int(line) for line in f.read().split('\n')]
 
 for i in range(len(data)):

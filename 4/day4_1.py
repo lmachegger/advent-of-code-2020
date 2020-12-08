@@ -1,7 +1,7 @@
 # Day 4
 # Part 1
 
-with open('input4', 'r') as f:
+with open('4/input4', 'r') as f:
     all_lines = f.read().split('\n\n')
 
 passports = []

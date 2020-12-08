@@ -1,6 +1,6 @@
 # Day 5
 # Part 2
-with open('input5', 'r') as f:
+with open('5/input5', 'r') as f:
     all_lines = [f.read().split('\n')][0]
 
 results = []
