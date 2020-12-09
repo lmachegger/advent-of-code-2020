@@ -7,8 +7,7 @@ acc = 0
 idx = 0
 performed_lines = []
 while True:
-    arg = lines[idx].split(' ')[0]
-    val = int(lines[idx].split(' ')[1])
+    arg, val = lines[idx].split()
 
     if idx not in performed_lines:
         performed_lines.append(idx)
@@ -16,10 +15,10 @@ while True:
         break
 
     if arg == 'acc':
-        acc += val
+        acc += int(val)
         idx += 1
     elif arg == 'jmp':
-        idx += val
+        idx += int(val)
     elif arg == 'nop':
         idx += 1
 
